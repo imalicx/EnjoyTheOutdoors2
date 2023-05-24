@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mountains.css" />
+    <title>Capstone Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">Enjoy the Outdoors</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="../index.html">Home</a>
+          <a href="#">Mountains</a>
+          <a href="../parks/parks.html">Parks</a>
+        </div>
+      </nav>
+    </header>
+ 
+  <!--Mountains-->
+  <div class="label-selection">
+  <h1>Mountain Information</h1>
+  <label for="mountain-select">Select a mountain:</label>
+  <select id="mountain-select"></select>
+</div>
+  <div id="mountain-info">
+    <p id="mountain-name"></p>
+    <p id="mountain-description"></p>
+    <p id="mountain-elevation"></p>
+    <p id="mountain-effort"></p>
+    <img id="mountain-image" src="">
+    <p id="sunrise-time"></p>
+    <p id="sunset-time"></p>
+  </div>
+
+
+    <footer>
+      <p>&copy; 2023 Malic Madison. All rights reserved.</p>
+    </footer>
+    
+    <script src="mountainData.js"></script>
+    <script src="mountains.js"></script>
+    <script src="/js/app.js"></script>
+
+  </body>
+</html>
