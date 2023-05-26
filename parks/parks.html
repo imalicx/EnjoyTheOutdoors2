@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parks.css" />
+    <title>Capstone Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">Enjoy the Outdoors</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="../index.html">Home</a>
+          <a href="../mountains/mountains.html">Mountains</a>
+          <a href="#">Parks</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Search functionality start from here-->
+   <div id="search-functionality">
+
+    <h1>National Parks Search 🏞️</h1>
+    <div class="search-container">
+      <label for="search-type">Search By:</label>
+      <select id="search-type">
+        <option value="location">Location</option>
+        <option value="parkType">Park Type</option>
+      </select>
+  
+      <div id="search-criteria"></div>
+  
+      <button id="search-button">Search</button>
+  
+      <div class="view-all-data">
+        <label for="view-all">View All National Parks</label>
+        <input type="checkbox" id="view-all">
+      </div>
+    </div>
+  
+    <div id="search-results"></div>
+  </div>
+
+    <script src="nationalParkData.js"></script>
+    <script src="locationData.js"></script>
+    <script src="parkTypeData.js"></script>
+    <script src="parks.js"></script>
+  <script src="/js/app.js"></script>
+<!--Footer starts from here-->
+    <footer>
+      <p>&copy; 2023 Israr. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>
+
+

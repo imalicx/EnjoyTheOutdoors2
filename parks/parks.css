@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* nav styles */
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav__link a:hover {
+    background-color: lightcoral;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  
+/*CSS for search functionality*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#search-functionality {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  #search-functionality {
+    margin: 10px;
+  }
+
+  /* Adjust the font size for smaller screens if needed */
+  #search-functionality h1 {
+    font-size: 24px;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:768px)
+{
+  .search-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container > * {
+  width: 100%;
+}
+
+.view-all-data {
+  margin-left: 35px;
+}
+.search-container label {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+#search-results {
+  margin-top: 20px;
+}
+
+#park-type-dropdown{
+  width: 100%;
+}
+.park{
+  width: 100%;
+  border: none;
+}
+}
+
+.search-container label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+
+button {
+  padding: 8px 16px;
+  background-color: #ccbdbd;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-results {
+  margin-top: 20px;
+}
+
+.park {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.park h2 {
+  margin: 0;
+}
+
+.park p {
+  margin: 5px 0;
+}
+
+.park a {
+  color: blue;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+
+
+/*CSS for Footer*/
+  footer {
+    background-color: #ccbdbd;
+    color:black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0; /* Remove default margin to avoid extra space */
+  }
