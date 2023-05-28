@@ -1,4 +1,4 @@
-const mountainData = [  //Json data
+const mountainData = [  
     {
         name: "Mt. Washington",
         elevation: 6288,

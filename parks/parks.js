@@ -1,12 +1,12 @@
-// Function to populate the search criteria dropdown based on the selected search type
+// function to populate the search  dropdown based on the selected search type
 function populateSearchCriteria() {
   const searchType = document.getElementById("search-type").value;
   const searchCriteriaContainer = document.getElementById("search-criteria");
 
-  // Clear previous criteria
+  // clears previous search
   searchCriteriaContainer.innerHTML = "";
 
-  // Create and populate the appropriate dropdown
+  // populates the appropriate dropdown
   if (searchType === "location") {
     const locationDropdown = document.createElement("select");
     locationDropdown.id = "location-dropdown";
@@ -34,10 +34,10 @@ function populateSearchCriteria() {
   }
 }
 
-// Function to display the search results
+// function for the search results
 function displaySearchResults(parks) {
   const searchResultsContainer = document.getElementById("search-results");
-  searchResultsContainer.innerHTML = ""; // Clear previous results
+  searchResultsContainer.innerHTML = ""; 
 
   parks.forEach(park => {
     const parkElement = document.createElement("div");
@@ -62,14 +62,14 @@ function displaySearchResults(parks) {
   }
 }
 
-// Function to perform the search based on the selected search type and criteria
+// function to perform the search based on the selected search type and criteria
 function performSearch() {
   const searchType = document.getElementById("search-type").value;
   const searchCriteria = searchType === "location" ? document.getElementById("location-dropdown").value : document.getElementById("park-type-dropdown").value;
   const searchResultsContainer = document.getElementById("search-results");
   searchResultsContainer.innerHTML = ""; // Clear previous results
 
-  // Perform the search based on the selected search type and criteria
+  // search perform on search/criteria
   let filteredParks = [];
 
   if (searchType === "location") {
@@ -78,7 +78,7 @@ function performSearch() {
     filteredParks = nationalParkData.filter(park => park.LocationName.toLowerCase().includes(searchCriteria.toLowerCase()));
   }
 
-  // Display the search results
+  // search results
   displaySearchResults(filteredParks);
 
   if (filteredParks.length === 0) {
@@ -88,7 +88,7 @@ function performSearch() {
   }
 }
 
-// Function to handle the "View All" option
+// view all function
 function handleViewAllOption() {
   const viewAllOption = document.getElementById("view-all");
   if (viewAllOption.checked) {
@@ -96,7 +96,6 @@ function handleViewAllOption() {
   }
 }
 
-// Event listeners
 document.getElementById("search-type").addEventListener("change", populateSearchCriteria);
 document.getElementById("search-button").addEventListener("click", performSearch);
 document.getElementById("view-all").addEventListener("change", handleViewAllOption);

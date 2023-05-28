@@ -1,11 +1,11 @@
-// Fetch the sunrise/sunset times for a specific mountain
+// fetch the sunrise/sunset times for a specific mountain
 async function getSunsetForMountain(lat, lng) {
   let response = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
   let data = await response.json();
   return data.results;
 }
 
-// Function to populate the dropdown list with mountain names
+// function to populate the dropdown list with mountain names
 function populateDropdown() {
   const mountainSelect = document.getElementById('mountain-select');
   
@@ -17,7 +17,7 @@ function populateDropdown() {
   }
 }
 
-// Function to display the selected mountain information
+// fuction to display the selected mountain information
 function displayMountainInfo() {
   const mountainIndex = document.getElementById('mountain-select').value;
   const mountain = mountainData[mountainIndex];
@@ -35,8 +35,8 @@ function displayMountainInfo() {
 }
 
 
-// Event listener when the dropdown selection changes
+// event listener when the dropdown selection changes
 document.getElementById('mountain-select').addEventListener('change', displayMountainInfo);
 
-// Populate the dropdown list on page load
+// populate the dropdown list 
 populateDropdown();
