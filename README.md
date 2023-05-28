@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
  ![image](https://github.com/imalicx/EnjoyTheOutdoors2/assets/130395112/712e7670-0c27-47e6-8495-28d430942224)
 3. Open the index.html file in your web browser.
  
- Screenshots
+ 
 Homepage
  ![image](https://github.com/imalicx/EnjoyTheOutdoors2/assets/130395112/34e0d7be-f9b4-44bc-923c-d99b05fb9c12)
 
@@ -37,5 +37,3 @@ Mountains Information Page
 Interesting JavaScript Code
 One interesting piece of JavaScript code used in this project is a function that fetches the sunrise and sunset times for a specific mountain using the Sunrise-Sunset API. Here's an example:
 ![image](https://github.com/imalicx/EnjoyTheOutdoors2/assets/130395112/ca47755c-3d44-41d1-8f8f-d6ac832460fc)
-
->>>>>>> 4c04db77c9df990bd773c26f48447f37edb6d3bc
