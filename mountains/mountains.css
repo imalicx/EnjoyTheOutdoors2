@@ -27,7 +27,7 @@
   
   .logo {
     font-size: 1.8rem;
-    color: rgb(5, 5, 116);
+    color: lightsalmon;
     padding-left: 20px;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .nav__link a:hover {
-    background-color: lightcoral;
+    background-color: lightsalmon;
   }
   
   .hide {
@@ -159,8 +159,8 @@
   
   
   footer {
-    background-color: #ccbdbd;
-    color:black;
+    background-color: lightsalmon;
+    color:white;
     padding: 20px;
     text-align: center;
   }
