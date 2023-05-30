@@ -1,4 +1,5 @@
 // fetch the sunrise/sunset times for a specific mountain
+
 async function getSunsetForMountain(lat, lng) {
   let response = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
   let data = await response.json();
@@ -6,6 +7,7 @@ async function getSunsetForMountain(lat, lng) {
 }
 
 // function to populate the dropdown list with mountain names
+
 function populateDropdown() {
   const mountainSelect = document.getElementById('mountain-select');
   
@@ -18,6 +20,7 @@ function populateDropdown() {
 }
 
 // fuction to display the selected mountain information
+
 function displayMountainInfo() {
   const mountainIndex = document.getElementById('mountain-select').value;
   const mountain = mountainData[mountainIndex];

@@ -1,4 +1,5 @@
 // function to populate the search  dropdown based on the selected search type
+
 function populateSearchCriteria() {
   const searchType = document.getElementById("search-type").value;
   const searchCriteriaContainer = document.getElementById("search-criteria");
@@ -7,6 +8,7 @@ function populateSearchCriteria() {
   searchCriteriaContainer.innerHTML = "";
 
   // populates the appropriate dropdown
+
   if (searchType === "location") {
     const locationDropdown = document.createElement("select");
     locationDropdown.id = "location-dropdown";
@@ -35,6 +37,7 @@ function populateSearchCriteria() {
 }
 
 // function for the search results
+
 function displaySearchResults(parks) {
   const searchResultsContainer = document.getElementById("search-results");
   searchResultsContainer.innerHTML = ""; 
@@ -63,6 +66,7 @@ function displaySearchResults(parks) {
 }
 
 // function to perform the search based on the selected search type and criteria
+
 function performSearch() {
   const searchType = document.getElementById("search-type").value;
   const searchCriteria = searchType === "location" ? document.getElementById("location-dropdown").value : document.getElementById("park-type-dropdown").value;
@@ -70,6 +74,7 @@ function performSearch() {
   searchResultsContainer.innerHTML = ""; // Clear previous results
 
   // search perform on search/criteria
+  
   let filteredParks = [];
 
   if (searchType === "location") {
