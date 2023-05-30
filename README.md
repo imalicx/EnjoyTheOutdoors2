@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+=======
+Learn To Code - Capstone 2: Enjoy the Outdoors is a web application that helps users find activities to enjoy in the great outdoors. The website focuses on providing information about national parks and mountains for users to explore. This project utilizes HTML, CSS, and JavaScript to create an interactive and informative user experience. It also encourages research skills to overcome any challenges that may arise during development.
+ 
+Pages -
+The website includes the following pages:
+ 
+Homepage -
+The homepage serves as an introduction to the organization and provides links to two main pages: the National Parks search page and the Mountains information page.
+
+ 
+National Parks Search Page -
+The National Parks search page allows users to search for national parks based on location and park type. Users can search by selecting a state/territory or choosing a park type from dropdown menus. The park data is sourced from the nationalParks.js file. The search by location feature takes priority in implementation.
+ 
+Mountains Information Page -
+The Mountains information page provides a dropdown list of 48 different mountains. When a user selects a mountain from the list, the page displays detailed information about that mountain, including its name, description, elevation, and other interesting facts. The mountain data is sourced from the mountains.js file.
+ 
+Installation and Usage -
+To run this project locally, follow these steps:
+ 
+To run this project locally, follow these steps:
+
+1. clone the repository
+=======
+>>>>>>> 334abadea8cb266813232dd8a1b9c21f098d2f61
 Learn To Code - Capstone 2: 
 
 Enjoy the Outdoors is a web application that helps users find activities to enjoy in the great outdoors. The website focuses on providing information about national parks and mountains for users to explore. This project utilizes HTML, CSS, and JavaScript to create an interactive and informative user experience.
