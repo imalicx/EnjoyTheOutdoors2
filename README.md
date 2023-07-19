@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 Learn To Code - Capstone 2: Enjoy the Outdoors is a web application that helps users find activities to enjoy in the great outdoors. The website focuses on providing information about national parks and mountains for users to explore. This project utilizes HTML, CSS, and JavaScript to create an interactive and informative user experience. It also encourages research skills to overcome any challenges that may arise during development.
  
 Pages -
@@ -21,8 +19,6 @@ To run this project locally, follow these steps:
 To run this project locally, follow these steps:
 
 1. clone the repository
-=======
->>>>>>> 334abadea8cb266813232dd8a1b9c21f098d2f61
 Learn To Code - Capstone 2: 
 
 Enjoy the Outdoors is a web application that helps users find activities to enjoy in the great outdoors. The website focuses on providing information about national parks and mountains for users to explore. This project utilizes HTML, CSS, and JavaScript to create an interactive and informative user experience.
